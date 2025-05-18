@@ -4,13 +4,13 @@
   <img src="https://i.pinimg.com/736x/d0/ca/e3/d0cae31793946506809acee48eeceab5.jpg" width="30px">
 </h1>
 <p align="center">
-A lightweight cross-platform C++ game engine from scratch with custom allocator and OpenGL rendering </p>
+A lightweight cross-platform C++ game engine from scratch with a memory management system and OpenGL rendering</p>
 </div>
 
 **LuluProject** is my personal exploration into the world of low-level graphics programming, memory management, and game engine architecture. This is **not** intended to be a production-ready engine, but rather a hands-on educational project where I'm learning:
 
 - Low-level graphics programming with OpenGL
-- Memory management and custom allocators
+- Memory management system design and tracking logic
 - Game engine architecture design
 - Cross-platform development concepts
 - Performance optimization techniques
@@ -21,15 +21,15 @@ A lightweight cross-platform C++ game engine from scratch with custom allocator 
 
 ## 🧩 Features
 
-| Feature Description 🚀 | Details                                                |
-| ---------------------- | ------------------------------------------------------ |
-| **C++ Core**           | Built entirely in C++ 🔺                               |
-| **OpenGL Rendering**   | Fundamental rendering pipeline using OpenGL 🖼️         |
-| **Image Loading**      | Texture loading via `stb_image` library                |
-| **Input System**       | Basic keyboard input handling 🕹️                       |
-| **Scene System**       | Simple scene management with entity logic scripting    |
-| **Memory Management**  | Experimental custom allocator implementation 🧠        |
-| **Platform Layer**     | Foundation for cross-platform support (Linux-first) 🧰 |
+| Feature Description 🚀 | Details                                                    |
+| ---------------------- | ---------------------------------------------------------- |
+| **C++ Core**           | Built entirely in C++ 🔺                                   |
+| **OpenGL Rendering**   | Fundamental rendering pipeline using OpenGL 🖼️             |
+| **Image Loading**      | Texture loading via `stb_image` library                    |
+| **Input System**       | Basic keyboard input handling 🕹️                           |
+| **Scene System**       | Simple scene management with entity logic scripting        |
+| **Memory Management**  | Optional custom memory management system implementation 🧠 |
+| **Platform Layer**     | Foundation for cross-platform support (Linux-first) 🧰     |
 
 ---
 
@@ -180,7 +180,7 @@ cmake --build .
 
 ### 🚧 In Progress / Planned
 
-- [ ] Finish custom allocator (free lists, memory tracking, fragmentation)
+- [ ] Improve memory tracking (fragmentation handling, stats, reuse logic)
 - [ ] Platform API abstractions for Windows 🪟
 - [ ] Platform API abstractions for macOS 🍎
 - [ ] Component system (transform, sprite, etc.)
